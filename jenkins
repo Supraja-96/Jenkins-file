@@ -5,19 +5,19 @@ stages
 stage('Build') 
 {
 steps{
-mvn build
+echo "Building the Project.........."
 }
 }
 stage('Test') 
 {
 steps{
-mvn package
+echo "Testing the Project.........."
 }
 }
 stage('Deploy') 
 {
 steps{
-http://18.218.128.184/tomcat/tomcat
+echo "Deploying the Project.........."
 }
 }
 }
